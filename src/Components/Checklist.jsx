@@ -21,8 +21,8 @@ const Checklist = () => {
          <div className="header">
             <button
                   onClick={ () => {setDeleteMode(!deleteMode)} }
-                  className={`del-toggle ${deleteMode ? 'bg-red' : 'bg-dark-red'}`}>
-                     <i className="delete bi bi-trash-fill"></i>
+                  className={`del-toggle delete ${deleteMode ? 'bg-red' : 'bg-dark-red'}`}>
+                     <i className="bi bi-trash-fill"></i>
                   </button>
 
             <TaskForm refresher={{refresh, setRefresh}}/>
