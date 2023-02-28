@@ -1,0 +1,117 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Titillium+Web:wght@300&display=swap');
+
+* {
+   font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+   background-color: black;
+}
+
+#root {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+button {
+   border-radius: 20%;
+   color: white;
+   width: 2rem;
+   height: 2rem;
+}
+
+.main {
+   margin-top: 100px;
+}
+
+.main-logo {
+   width: 50px;
+   float: left;
+   margin-right: 10px;
+   margin-top: 5px;
+
+}
+
+.logo-div {
+   rotate: 270deg;
+   position: relative;
+   right: 182px;
+   top: -48px;
+   color: rgb(255, 255, 255);
+   font-size: 2.5rem;
+   font-family: 'Gajraj One', cursive;
+}
+
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   width: 100%;
+}
+
+.content-container {
+   background-color: white;
+   float: right;
+   align-items: center;
+
+
+   outline-width: 3px;
+   outline-color: black;
+   outline-style: solid;
+   border-radius: 5px;
+   border-left-width: 50px;
+   border-left-style: solid;
+   border-color: black;
+   padding: 10px;
+   width: 400px;
+   min-height: 200px;
+}
+
+.task-form {
+   width: 100%;
+   font-family: 'Titillium Web', sans-serif;
+}
+
+.text-input {
+   height: 26px;
+   margin-left: 10px;
+   width: 275px;
+   border-top-left-radius: 7px;
+   border-bottom-left-radius: 7px;
+}
+
+.submit {
+   height: 2rem;
+   background-color: black;
+   color: white;
+   font-size: 1rem;
+   border-style: none;
+   border-top-right-radius: 7px;
+   border-bottom-right-radius: 7px;
+   /* outline-style: solid;
+   outline-color: black;
+   outline-width: 3px; */
+}
+
+.ListItem {
+   font-size: 1.5rem;
+   width: 100%;
+   padding: 3px;
+}
+
+.delete {
+   font-size: 1rem;
+}
+
+/* Utility classes */
+
+.bg-red {
+   background-color: red;
+}
+
+.bg-dark-red {
+   background-color: rgb(196, 0, 0);
+}
+
