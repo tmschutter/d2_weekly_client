@@ -9,7 +9,7 @@ const Checklist = () => {
 
    useEffect(()=> {
       async function fetchDefault(){
-         const response = await fetch('http://localhost:8000/all', {mode: 'cors'})
+         const response = await fetch('https://d2-weekly-server.onrender.com/all', {mode: 'cors'})
          const data = await response.json()
          setChecklist(data)
        }

@@ -5,7 +5,7 @@ const ListItem = ({ item, deleteMode, refresher }) => {
    const [ checked, setChecked ] = useState(item.complete);
 
    const handleChange = async (bool, id) => {
-      const response = await fetch(`http://localhost:8000/task/${id}`, {
+      const response = await fetch(`https://d2-weekly-server.onrender.com/task/${id}`, {
          method: 'PATCH',
          mode: 'cors',
          headers: {
@@ -19,7 +19,7 @@ const ListItem = ({ item, deleteMode, refresher }) => {
    }
 
    const xHandler = async () => {
-      const response = await fetch(`http://localhost:8000/task/${item.id}`, {
+      const response = await fetch(`https://d2-weekly-server.onrender.com/task/${item.id}`, {
          method: 'DELETE',
          mode: 'cors',
       });

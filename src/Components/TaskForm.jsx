@@ -6,7 +6,7 @@ const TaskForm = ({ refresher }) => {
 
    const handleSubmit = async (e) => {
       e.preventDefault();
-      let response = await fetch('http://localhost:8000/add', {
+      let response = await fetch('https://d2-weekly-server.onrender.com/add', {
          method: 'PUT',
          mode: 'cors',
          headers: {
